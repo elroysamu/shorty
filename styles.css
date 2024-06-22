@@ -1,0 +1,37 @@
+.container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Ensure items stack vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#shortLinkContainer {
+    margin-top: 20px; /* Adjust spacing between input and short link */
+    text-align: center; /* Center align the content */
+}
