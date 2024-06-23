@@ -2,7 +2,7 @@ function makeApiCall() {
     const inputBox = document.getElementById('inputBox');
     const inputValue = inputBox.value;
 
-    const apiUrl = 'http://192.168.43.91:8080/generate';
+    const apiUrl = 'https://shorty-2a9o.onrender.com/generate';
 
     const requestData = {
         url: inputValue
@@ -30,7 +30,7 @@ function makeApiCall() {
 function displayShortLink(data) {
     // Assuming data is in the format { "shortLink": "5198adbc", "expirationDate": "2024-06-22T16:23:29.626484339", "originalUrl": "https://www.youtube.com/watch?v=1nrmrnKQAI8" }
     const shortLink = data.shortLink;
-    const apiUrl = 'http://192.168.43.91:8080/' + shortLink;
+    const apiUrl = 'https://shorty-2a9o.onrender.com/' + shortLink;
 
     // Update short link container
     const shortLinkContainer = document.getElementById('shortLink');
